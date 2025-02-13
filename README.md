@@ -36,6 +36,12 @@ The steps are the following:
 2. interpolate between the point of this baseline and input x
 3. take the gradient with respect to each interpolated input
 4. compute the average of these vectors
+- **Grad-CAM**: Works for CNNs only. We select the last convolution layer. It ic very sensitive to layer choice which sometimes makes it always clear.
+- **Deep-LIFT**
+
+Libraies:
+- [Captum](https://captum.ai/docs/introduction) (for LRP)
+- [TFExplain](https://tf-explain.readthedocs.io/en/latest/) (for Grad-CAM)
 
 
 [Demo](https://lrpserver.hhi.fraunhofer.de/) for testing different methods in LRP AI explainability.
@@ -56,3 +62,7 @@ Details about the event: [https://www.esb.tn/evenement-s/weita-2025/.](https://w
 [https://arxiv.org/pdf/1604.00825](https://arxiv.org/pdf/1604.00825)
 
 [https://arxiv.org/pdf/1703.01365](https://arxiv.org/pdf/1703.01365)
+
+[https://arxiv.org/pdf/1610.02391](https://arxiv.org/pdf/1610.02391)
+
+[https://arxiv.org/pdf/1704.02685](https://arxiv.org/pdf/1704.02685)

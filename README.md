@@ -1,5 +1,8 @@
 # WEITA 2025 Explainable AI workshop
+> [!NOTE]
+> This is a draft😂. So I'm still working on adding more informations and detail😉
 
+Explicability is not always saught through understanding the models. Could be through text, examples, etc. All of these techniques are also used to explain how a model functions.
 
 ## Choosing the explainability method
 To choose which explainability tool and methods to choose you can follow the cheat sheet below.
@@ -37,14 +40,24 @@ The steps are the following:
 3. take the gradient with respect to each interpolated input
 4. compute the average of these vectors
 - **Grad-CAM**: Works for CNNs only. We select the last convolution layer. It ic very sensitive to layer choice which sometimes makes it always clear.
-- **Deep-LIFT**
+- **Deep-Lift**
 
-Libraies:
+Libraries:
 - [Captum](https://captum.ai/docs/introduction) (for LRP)
 - [TFExplain](https://tf-explain.readthedocs.io/en/latest/) (for Grad-CAM)
 
 
 [Demo](https://lrpserver.hhi.fraunhofer.de/) for testing different methods in LRP AI explainability.
+
+## Tools For NLP/LLM
+
+Libraries:
+- [Phoenix](https://phoenix.arize.com/)
+- [LIT](https://github.com/PAIR-code/lit) (Used especially with encoder only models like BERT)
+- [Comagra](https://github.com/FlorianDietz/comgra)
+- [BERTViz](https://github.com/jessevig/bertviz)
+
+[Demo](https://bbycroft.net/llm) of the LLM architectures (not all of them like gpt 3.5 or gpt 4).
 
 Details about the event: [https://www.esb.tn/evenement-s/weita-2025/.](https://www.esb.tn/evenement-s/weita-2025/.)
 

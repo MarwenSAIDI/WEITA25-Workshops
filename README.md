@@ -23,6 +23,23 @@ Libraries:
 - [Dalex](https://dalex.drwhy.ai/) (for SHAP)
 - [AIX360](https://aix360.readthedocs.io/en/latest/) (for LIME)
 
+## Model Specific
+
+These are methods that are specific to certain types of models such as Neural Networks.
+
+Methods:
+- **LRP**
+- **Saliency map**: It uses the gradients which is used to update the weights. It points ot he steepest ascent direction. We use it to explain through an instance and not the weights.
+- **Integrated Gradient**: It also uses the gradients but it needs a reference data.
+The steps are the following:
+1. Compare x with the baseline (no information)
+2. interpolate between the point of this baseline and input x
+3. take the gradient with respect to each interpolated input
+4. compute the average of these vectors
+
+
+[Demo](https://lrpserver.hhi.fraunhofer.de/) for testing different methods in LRP AI explainability.
+
 Details about the event: [https://www.esb.tn/evenement-s/weita-2025/.](https://www.esb.tn/evenement-s/weita-2025/.)
 
 ## Sources:
@@ -35,3 +52,7 @@ Details about the event: [https://www.esb.tn/evenement-s/weita-2025/.](https://w
 [https://arxiv.org/pdf/1705.07874](https://arxiv.org/pdf/1705.07874)
 
 [https://homes.cs.washington.edu/~marcotcr/aaai18.pdf](https://homes.cs.washington.edu/~marcotcr/aaai18.pdf)
+
+[https://arxiv.org/pdf/1604.00825](https://arxiv.org/pdf/1604.00825)
+
+[https://arxiv.org/pdf/1703.01365](https://arxiv.org/pdf/1703.01365)

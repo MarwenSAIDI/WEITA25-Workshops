@@ -14,6 +14,7 @@ For extra details, you can refer to this taxonomy.
 
 Methods:
 - **LIME**: It's an instance based technique that replaces a model by another one less complex (KNN, logistic regression, linear regressing, etc) to explain in the vicinity of a selected instance. It applies perturbations to an instance x that we want to study, predict to label using the model we want to expalin and minimizes the error between the main model and the local model.
+
 - **SHAP**
 - **Anchor**
 
